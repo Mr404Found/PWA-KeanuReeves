@@ -1,9 +1,9 @@
 const container = document.querySelector(".container");
 
 const fruits = [
+  { name: "Explicabo", image: "images/coffee3.jpg" },
   { name: "Voluptatem", image: "images/coffee2.jpg" },
   { name: "Perspiciatis", image: "images/coffee1.jpg" },
-  { name: "Explicabo", image: "images/coffee3.jpg" },
   { name: "Rchitecto", image: "images/coffee4.jpg" },
   { name: " Beatae", image: "images/coffee5.jpg" },
   { name: " Vitae", image: "images/coffee6.jpg" },
@@ -29,7 +29,6 @@ const showFruits = () => {
 
 document.addEventListener("DOMContentLoaded", showFruits);
 
-
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function() {
     navigator.serviceWorker
@@ -38,4 +37,3 @@ if ("serviceWorker" in navigator) {
       .catch(err => console.log("service worker not registered", err));
   });
 }
-
